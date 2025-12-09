@@ -1,0 +1,2 @@
+import { StoredInfo } from "./calculateAge";
+
