@@ -1,0 +1,53 @@
+body {
+  background-color: blue;
+}
+
+.grid-body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.body1 {
+  grid-area: 1/1/2/2;
+  background-color: white;
+}
+
+.body2 {
+  grid-area: 2/1/6/2;
+  background-color: aqua;
+}
+
+.body3 {
+  grid-area: 1/2/2/6;
+  background-color: aqua;
+}
+
+.body4 {
+  grid-area: 2/2/6/3;
+  background-color: lightblue;
+}
+
+.body5 {
+  grid-area: 2/3/3/6;
+  background-color: lightblue;
+}
+
+.body6 {
+  grid-area: 3/3/6/4;
+  background-color: grey;
+}
+
+.body7 {
+  grid-area: 3/4/4/6;
+  background-color: grey;
+}
+
+.body8 {
+  grid-area: 4/4/6/6;
+  background-color: white;
+}
+
+.outlinedBody {
+  border: solid black 3px;
+}
