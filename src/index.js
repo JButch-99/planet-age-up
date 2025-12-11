@@ -2,8 +2,10 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 
-function helloWorld() {
-  console.log("hello World");
-}
+// Imports & IDs
 
-helloWorld();
+document.getElementById("planet1").addEventListener("click", handlePlanetClicks);
+
+function handlePlanetClicks() {
+  console.log("test");
+}

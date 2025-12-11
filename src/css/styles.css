@@ -80,3 +80,13 @@ body {
   color: white;
   font-size: 125%;
 }
+
+.contentBox {
+  background-color: gray;
+  border: solid black 3px;
+  margin: 1%;
+  padding: 5%;
+  font-size: 150%;
+  overflow:hidden;
+  cursor:crosshair;
+}
