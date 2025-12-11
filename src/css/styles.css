@@ -32,3 +32,51 @@ body {
 .outlinedBody {
   border: solid black 3px;
 }
+
+.planets {
+  text-align: center;
+}
+
+.mercuryPlanet {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg);
+}
+
+.venusPlanet {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg);
+}
+
+.earthPlanet {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/The_Blue_Marble%2C_AS17-148-22727.jpg/1200px-The_Blue_Marble%2C_AS17-148-22727.jpg);
+}
+
+.marsPlanet {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0c/Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png);
+}
+
+.jupiterPlanet {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Jupiter_OPAL_2024.png/1200px-Jupiter_OPAL_2024.png);
+}
+
+.row.planets {
+  gap: 10px;
+  height: 100%;
+}
+
+.col {
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  border: solid black 3px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: lightcyan;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  margin: 0% 15px;
+  padding: 1%;
+  color: white;
+  font-size: 125%;
+}

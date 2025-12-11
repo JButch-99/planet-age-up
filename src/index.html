@@ -9,14 +9,29 @@
         <h1>What is your planetary age?</h1>
         <p>By: JButch-99</p>
       </div>
-      <div class="body2 outlinedBody"></div>
-      <div class="body3 outlinedBody"></div>
+      <div class="body2 outlinedBody">
+        <div class="dataBox">
+          <form id="infoForm">
+            <label for="currentEarthAge">What is your age?</label>
+            <input type="number" name="currentEarthAge" required />
+          </form>
+        </div>
+      </div>
+      <div class="body3 outlinedBody">
+        <div class="row planets">
+          <div class="col mercuryPlanet">Mercury</div>
+          <div class="col venusPlanet">Venus</div>
+          <div class="col earthPlanet">Earth</div>
+          <div class="col marsPlanet">Mars</div>
+          <div class="col jupiterPlanet">Jupiter</div>
+        </div>
+      </div>
       <div class="body4 outlinedBody">
-        <div class="venus hidden"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="hidden" id="mercury"></div>
+        <div class="hidden" id="venus"></div>
+        <div class="hidden" id="earth"></div>
+        <div class="hidden" id="mars"></div>
+        <div class="hidden" id="jupiter" ></div>
       </div>
     </div>
   </body>
