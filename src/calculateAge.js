@@ -13,17 +13,30 @@ export class StoredInfo {
     this.earthAge = userAge;
   }
 
-  calculateAge(planet) {
-    const cosmoListings = {
-      Jupiter: 11.86,
-      Venus: .62,
-      Mars: 1.88,
-      Mercury: .24
-    }
+  calculateMercury() {
 
-    if (planet === cosmoListings) {
-      console.log(cosmoListings[planet]);
-    }
+  }
+
+  calculateVenus() {
+
+  }
+
+  calculateEarth() {
+        
+  }
+
+  calculateMars() {
+
+  }
+
+  calculateJupiter() {
+
+  }
+
+  resetSavedInfo() {
+    this.earthAge = 0;
+    this.mercurialYear = 0;
+    this.martianYear = 0;
   }
 }
 

@@ -1,11 +1,13 @@
-body {
-  background-color: blue;
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
 .grid-body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
+  height: 100%;
 }
 
 .body1 {
@@ -62,7 +64,7 @@ body {
   height: 100%;
 }
 
-.col {
+.planet {
   background-size: cover;
   background-position: center;
   border-radius: 8px;
@@ -77,8 +79,13 @@ body {
   height: 100%;
   margin: 0% 15px;
   padding: 1%;
-  color: white;
-  font-size: 125%;
+  color: rgb(255, 255, 255);
+  font-size: 135%;
+  text-shadow:  0 0 5px cyan,
+  0 0 10px navy,
+  0 0 15px slategray,
+  1px 1px 2px black;
+  font-weight: bolder;
 }
 
 .contentBox {
@@ -89,4 +96,39 @@ body {
   font-size: 150%;
   overflow:hidden;
   cursor:crosshair;
+}
+
+.hidden {
+  display: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  margin: 0% 10%;
+  background: radial-gradient(cyan, blue, darkblue);
+  border: solid black 3px;
+  padding: 20px;
+}
+
+label {
+  font-weight: bolder;
+  color: white;
+  background-color: grey;
+  border-radius: 15px;
+  border: solid black 3px;
+}
+
+input {
+  margin-bottom: 10%;
+}
+
+.footerPhrase {
+  font-size: 120%;
+  color: white;
+  text-shadow: 0 0 5px cyan, 0 0 15px navy;
+  text-align: center;
+  padding: 10%
 }
