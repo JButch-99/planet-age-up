@@ -4,11 +4,14 @@ import './css/styles.css';
 
 // Imports & IDs
 
+import { submittedInfo } from './submit';
+
 document.getElementById("planet1").addEventListener("click", handlePlanetClicks);
 document.getElementById("planet2").addEventListener("click", handlePlanetClicks);
 document.getElementById("planet3").addEventListener("click", handlePlanetClicks);
 document.getElementById("planet4").addEventListener("click", handlePlanetClicks);
 document.getElementById("planet5").addEventListener("click", handlePlanetClicks);
+document.querySelector('#infoForm').addEventListener("submit", submittedInfo);
 
 
 // UI Logic

@@ -1,18 +1,20 @@
 export class StoredInfo {
-  constructor(earthAge, venusAge, martianYear, jupiterAge, mercurialYear, name){
+  constructor(earthAge, venusAge, martianYear, jupiterAge, mercurialYear, name, originalAge, desiredAge){
     this.venusAge = venusAge;
     this.earthAge = earthAge;
     this.martianYear = martianYear;
-    this.jupiterAge = jupiterAge;
+    this.jupiterAge = jupiterAge; 
     this.mercurialYear = mercurialYear;
     this.name = name;
+    this.originalAge = originalAge;
+    this.desiredAge = desiredAge;
   }
 
   setEarthInfo(userName, userAge) {
     this.name = userName;
     this.earthAge = userAge;
   }
-
+ 
   calculateMercury() {
 
   }
@@ -41,4 +43,5 @@ export class StoredInfo {
 }
 
 
+export const storedUserInfo = new StoredInfo();
 
