@@ -10,29 +10,41 @@ export class StoredInfo {
     this.desiredAge = desiredAge;
   }
 
-  setEarthInfo(userName, userAge) {
-    this.name = userName;
+  updateUserInfo(userAge, userName, userDesire) {
+    this.originalAge = userAge;
     this.earthAge = userAge;
+    this.name = userName;
+    this.desiredAge = userDesire;
   }
- 
+
+  differenceOfAge() {
+    const difference =  this.desiredAge - this.originalAge;
+
+    if (difference < 0) {
+      return difference * -1
+    }
+
+    return difference;
+  }
+
   calculateMercury() {
-
-  }
-
-  calculateVenus() {
-
+    this.mercurialYear = (this.differenceOfAge() / 0.24).toFixed(2);
   }
 
   calculateEarth() {
-        
+    this.earthAge = this.differenceOfAge();
+  } 
+
+  calculateVenus() {
+    this.venusAge = (this.differenceOfAge() / 0.62).toFixed(2);
   }
 
   calculateMars() {
-
+    this.martianYear = (this.differenceOfAge() / 1.88).toFixed(2);
   }
 
   calculateJupiter() {
-
+    this.jupiterAge = (this.differenceOfAge() / 11.86).toFixed(2);  
   }
 
   resetSavedInfo() {
