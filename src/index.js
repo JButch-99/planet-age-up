@@ -45,6 +45,8 @@ function appendItems(planetChosen) {
   const locationOfName = document.getElementById("name");
   const answerSpan = document.getElementById("answer");
   const locationOfInterest = document.getElementById("planetOfInterest");
+  const ageOFUser = document.getElementById("age");
+  const desiredAgeOfUser = document.getElementById("planetAge");
   const planet = {
     planet1: "Mercury",
     planet2: "Venus",
@@ -60,18 +62,18 @@ function appendItems(planetChosen) {
     planet5: userData.jupiterAge
   }
 
-
   if (userData.name.trim() === "") {
     locationOfName.textContent = "Cadet!";
   } else {
-    locationOfName.textContent = userData.name;
+    locationOfName.textContent = "Cadet " + userData.name;
   }
   titleOfPlanet.textContent = planet[planetChosen];
   locationOfPlanet.textContent = planet[planetChosen];
   locationOfPlanet.textContent = planet[planetChosen];
   locationOfInterest.textContent = planet[planetChosen];
   answerSpan.textContent = answers[planetChosen];
-
+  ageOFUser.textContent = userData.originalAge;
+  desiredAgeOfUser.textContent = userData.desiredAge;
 }
 
 function handlePlanetClicks(event) {

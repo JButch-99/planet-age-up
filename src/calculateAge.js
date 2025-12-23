@@ -46,12 +46,6 @@ export class StoredInfo {
   calculateJupiter() {
     this.jupiterAge = (this.differenceOfAge() / 11.86).toFixed(2);  
   }
-
-  resetSavedInfo() {
-    this.earthAge = 0;
-    this.mercurialYear = 0;
-    this.martianYear = 0;
-  }
 }
 
 
