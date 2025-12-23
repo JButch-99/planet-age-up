@@ -55,5 +55,5 @@ export class StoredInfo {
 }
 
 
-export const storedUserInfo = new StoredInfo();
+export const storedUserInfo = new StoredInfo(0, 0, 0, 0,0, "", 0, 0);
 

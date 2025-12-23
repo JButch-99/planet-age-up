@@ -6,7 +6,7 @@
   <body>
     <div class="grid-body">
       <div class="body1 outlinedBody">
-        <h1 class="headEmbolden">What is your planetary age?</h1>
+        <h1 class="headEmbolden">Planets and Time!</h1>
         <p class="creditHead">By: JButch-99</p>
       </div>
 
@@ -21,10 +21,13 @@
               <input type="number"  id="desiredAge" required /><br>
               
               <label for="nameOfUser">What is your name?</label>
-              <input type="text"  id="nameOfUser" required /><br>
+              <input type="text"  id="nameOfUser" /><br>
               
               <button id="submitButton">Submit!</button> 
             </form>
+          </div>
+          <div class="contentBox">
+            <p><span id="error">No Alerts</span></p>
           </div>
           <div class="contentBox">
             <h1>Contact Us!</h1>
@@ -48,26 +51,42 @@
 
       <div class="body4 outlinedBody">
         <div class="cover" id="coverScreen">
-          
         </div>
         <div id="content" class="hidden contentFrame">
-          <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="infoBox">
+                <h1 class="title">Welcome to <span id="location">____</span></h1>
+              </div>
 
-          </div>
-          <div class="col-md-6">
-            <div class="infoBox">
-              <div class="photoChosen" id="photoFrame">
+              <div class="infoBox">
+                <div class="textBox">
+                  <p class="text">
+                    Hello, <span id="name">____</span><br>
+                  </p>
+                  <p class="text">
+                    If you are curious on your interstellar age, look no further! If you are <span id="age">___</span>, and curious about the difference until <span id="planetAge">___</span>?
+                  </p><br>
 
+                  <p class="text">
+                    Why? That's simple! The difference for <span id="planetOfInterest">___</span> is <span id="answer">___</span> years time!
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div class="infoBox">
+            <div class="col-md-6">
+              <div class="infoBox">
+                <div class="photoChosen" id="photoFrame">
 
+                </div>
+                <p class="title"><span id="title">___</span></p>
+              </div>
             </div>
           </div>
+        
         </div>
       </div>
-
     </div>
   </body>
 </html>

@@ -7,16 +7,11 @@ export function submittedInfo(event) {
   const submittedTargetAge = parseFloat(document.getElementById("desiredAge").value);
   const submittedUserAge = parseFloat(document.getElementById("currentEarthAge").value);
 
-
   storedUserInfo.updateUserInfo(submittedUserAge, submittedName, submittedTargetAge);
   storedUserInfo.calculateMercury();
   storedUserInfo.calculateVenus();
   storedUserInfo.calculateMars();
   storedUserInfo.calculateJupiter();
   storedUserInfo.calculateEarth();
-
-  console.log(
-    storedUserInfo
-  )
 }
 

@@ -1,5 +1,5 @@
-import { storedUserInfo } from "../src/calculateAge";
-const dataBase = new storedUserInfo;
+import { StoredInfo } from "../src/calculateAge";
+const dataBase = new StoredInfo;
 
 
 
