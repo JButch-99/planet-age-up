@@ -20,11 +20,19 @@ _This project is meant to help you see how long it'd take, or how long ago, to r
 
 NOTE: If you see this on an alternative source, please click on [this link](https://github.com/JButch-99/planet-age-up) for full project and set-up and installation guide.
 
-1. _To begin, click on the green button labeled "<> Code" located in the upper right-hand corner of your browser page. Please click from the drop down menu after clicking that green button the "download ZIP" option._
+1. _To begin, click on the green button labeled "<> Code" located in the upper right-hand corner of your browser page. Please click from the drop down menu after clicking that green button the "download ZIP" option. Alternatively if you use Git, you could use "git clone https://github.com/JButch-99/planet-age-up" to clone it._
 
-2. _Once downloaded, you will need to extract the files to gain access to the project for full functionality. Click "extract all" in the folder. If on Mac, just double click the ZIP file to automatically extract and unzip.
+2. _Once downloaded, you will need to extract the files to gain access to the project for full functionality. Click "extract all" in the folder. If on Mac, just double click the ZIP file to automatically extract and unzip._
 
-3. _Navigate and click on the "index.html" in the extracted folder to gain access to the project in a browser of choice by right clicking it._
+3. _Open the project inside a code editor of choice. Then, use "$ npm install" to download all packages._
+
+4. _Type in "$ npm run build" to build the project with webpack._
+
+5. _To create a developmental server, type in "$ npm run start" in your console to access the project for it's functionality._
+
+6. _To check for any issues with the code, use "$ npm run lint" in your console to ensure integrity of file._
+
+7. _To ensure all tests are passing with 100% coverage, please run "$ npm run test" on your console._
 
 ## Known Bugs / Unintended Behaviors
 * _Reducing the folder can hide certain planets, or cause background to break it's grid body. This will be fixed at a later date._
