@@ -24,7 +24,7 @@ NOTE: If you see this on an alternative source, please click on [this link](http
 
 2. _Once downloaded, you will need to extract the files to gain access to the project for full functionality. Click "extract all" in the folder. If on Mac, just double click the ZIP file to automatically extract and unzip._
 
-3. _Open the project inside a code editor of choice. Then, use "$ npm install" to download all packages._
+3. _Open the project inside a code editor of choice using a terminal and typing "code ." in it. Then, use "$ npm install" to download all packages._
 
 4. _Type in "$ npm run build" to build the project with webpack._
 
